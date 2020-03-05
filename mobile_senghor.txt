@@ -1,0 +1,150 @@
+cimport 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+void main() => runApp(
+  MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.pink[800],
+        title: Text("Bacelona"),
+        leading: IconButton(
+          icon: Icon(Icons.menu, color: Colors.pink,),
+          onPressed: () { print("You click me"); },
+        ),
+        
+        actions: <Widget>[
+          Image.network("https://upload.wikimedia.org/wikipedia/fr/thumb/a/a1/Logo_FC_Barcelona.svg/1011px-Logo_FC_Barcelona.svg.png",
+          width: 30.0,
+          ),
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () {},
+            color: Colors.pink[800],
+          ),
+          ],  
+          elevation: 20.0,
+        ),
+        body: Container(
+          child: Image.network(
+         'https://cdn.soccerladuma.co.za/cms2/image_manager/uploads/News/288726/7/default.jpg',
+         fit: BoxFit.cover,
+         height: double.infinity,
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          color: Colors.pink[800],
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.home),
+                color: Colors.white,
+              ),
+                IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.group),
+                color: Colors.white,
+              ),
+                IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.search),
+                color: Colors.white,
+              ),
+                IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.add),
+                color: Colors.white,
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+      ),
+    ),
+  ),
+);
+
+03/10/19
+Cher demo
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+void main() => runApp(Demo());
+
+class Demo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        // backgroundColor: Colors.pink,// put image
+        appBar: AppBar(
+          title: Text("I love studying at PNC"),
+          leading: IconButton(
+            onPressed: () {
+              print("PNC student Demo");
+            },
+            icon: Icon(
+              Icons.menu,
+              color: Colors.white,
+            ),
+          ),
+          actions: <Widget>[
+            Image.network(
+                "https://www.ivolunteer.com.ph/images/uploads/organization_images/351/original/org_e3d76f2451a22c6866d85c5c45b81842.png?1384228117"),
+          ],
+        ),
+        body: Container(
+          child: Image.network(
+            "http://jpninfo.com/wp-content/uploads/2017/05/Akeno-Sunflower-Festival1.jpg",
+            fit: BoxFit.cover,
+            height: double.infinity,
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Colors.pink,
+          child: Icon(Icons.favorite),
+        ),
+
+        bottomNavigationBar: BottomAppBar(
+          child: Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.favorite, color: Colors.red,),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.group, color: Colors.green,),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.message, color: Colors.purple,),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.search, color: Colors.blue,),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+===========================================================
+cmd 
+flutter build apk or flutter build apk --spilit-per-abi
+output 
+apk
+app-release.apk (copy dak mobile berk tv vea see in mobile)
